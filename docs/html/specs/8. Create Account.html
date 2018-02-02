@@ -1,0 +1,198 @@
+<link rel="stylesheet" type="text/css" href="..\style.css"><h1>Create Account Specification</h1>
+<p>Date Created    : 09/23/2017
+Version         : 1.0.0
+Owner           : Osanda Deshan
+Description     : This is an executable specification file which follows markdown syntax. Every heading in this file denotes a scenario. Every bulleted point denotes a step.</p>
+<p>tags: create_account</p>
+<h2>Verify that the Create Account Page contains expected elements</h2>
+<p>tags: create_account</p>
+<ul>
+<li>On Create Account Page</li>
+<li>Verify that the Create Account Page contains expected elements</li>
+</ul>
+<h2>Verify that a user can create an account with valid information</h2>
+<p>tags: create_account</p>
+<ul>
+<li>On Create Account Page</li>
+<li>Verify that the Create Account Page title is &quot;Create Account&quot;</li>
+<li>Create an account with following information
+<table>
+<thead>
+<tr>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Email</th>
+<th>Username</th>
+<th>Password</th>
+<th>Re-enter Password</th>
+<th>is Privacy Policy Confirmed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Osanda</td>
+<td>Nimalarathna</td>
+<td><a href="mailto:osanda@gmail.com" rel="nofollow">osanda@gmail.com</a></td>
+<td>osandaw</td>
+<td>Qwerty12</td>
+<td>Qwerty12</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Click Create Account button</li>
+<li>Verify that the Account creation is completed successfully</li>
+</ul>
+<h2>Verify that the user will navigate back to Login page after successfully creating the new account</h2>
+<ul>
+<li>Verify that the Login page title is &quot;Login&quot;</li>
+</ul>
+<h2>Verify that a user can create an account by filling the text fields with special characters</h2>
+<p>tags: create_account</p>
+<ul>
+<li>On Create Account Page</li>
+<li>Verify that the Create Account Page title is &quot;Create Account&quot;</li>
+<li>Create an account with following information
+<table>
+<thead>
+<tr>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Email</th>
+<th>Username</th>
+<th>Password</th>
+<th>Re-enter Password</th>
+<th>is Privacy Policy Confirmed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Osand@</td>
+<td>Nim#lar@thna</td>
+<td><a href="mailto:osanda@gmail.com" rel="nofollow">osanda@gmail.com</a></td>
+<td>os@ndaw</td>
+<td>Qwerty@12</td>
+<td>Qwerty@12</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Click Create Account button</li>
+<li>Verify that the Account creation is completed successfully</li>
+</ul>
+<h2>Verify that a user cannot create an account with an existing username</h2>
+<p>tags: create_account</p>
+<ul>
+<li>On Create Account Page</li>
+<li>Verify that the Create Account Page title is &quot;Create Account&quot;</li>
+<li>Create an account with following information
+<table>
+<thead>
+<tr>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Email</th>
+<th>Username</th>
+<th>Password</th>
+<th>Re-enter Password</th>
+<th>is Privacy Policy Confirmed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Osanda</td>
+<td>Nimalarathna</td>
+<td><a href="mailto:osanda@gmail.com" rel="nofollow">osanda@gmail.com</a></td>
+<td>osanda</td>
+<td>Qwerty12</td>
+<td>Qwerty12</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Click Create Account button</li>
+<li>Verify that the Account creation is failed</li>
+</ul>
+<h2>Clear the text fields on Create Account page</h2>
+<ul>
+<li>Clear text fields in Create Account page</li>
+</ul>
+<h2>Verify that a user cannot create an account with an invalid email</h2>
+<p>tags: create_account</p>
+<ul>
+<li>On Create Account Page</li>
+<li>Verify that the Create Account Page title is &quot;Create Account&quot;</li>
+<li>Create an account with following information
+<table>
+<thead>
+<tr>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Email</th>
+<th>Username</th>
+<th>Password</th>
+<th>Re-enter Password</th>
+<th>is Privacy Policy Confirmed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Osanda</td>
+<td>Nimalarathna</td>
+<td>osanda_gmail.com</td>
+<td>osanda</td>
+<td>Qwerty12</td>
+<td>Qwerty12</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Click Create Account button</li>
+<li>Verify that the Account creation is failed</li>
+<li>Clear text fields in Create Account page</li>
+</ul>
+<h2>Verify that a user cannot create an account without filling any fields</h2>
+<p>tags: create_account</p>
+<ul>
+<li>On Create Account Page</li>
+<li>Verify that the Create Account Page title is &quot;Create Account&quot;</li>
+<li>Create an account with following information
+<table>
+<thead>
+<tr>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Email</th>
+<th>Username</th>
+<th>Password</th>
+<th>Re-enter Password</th>
+<th>is Privacy Policy Confirmed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Click Create Account button</li>
+<li>Verify that the Account creation is failed</li>
+</ul>
+<h2>Verify that a user can navigate back to Login page</h2>
+<p>tags: create_account</p>
+<ul>
+<li>Navigate back from Create Account page</li>
+<li>Verify that the Login page title is &quot;Login&quot;</li>
+</ul>
+<ul id="navigation"><center><li class="nav"><a href=".\7. Feedback.html"><</a></li><li class="nav"><a href="..\index.html">=</a></li></center>

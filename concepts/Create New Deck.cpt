@@ -1,0 +1,18 @@
+Created by Osanda Deshan on 10/18/2017
+
+This is a concept file with following syntax for each concept.
+
+
+
+# Create new deck using the deck title as <deckTitle>, exam date as <examDate>, frequency of notifications as <frequency> and the reminder time as <hour>:<minutes> <amPm>
+
+* On My Decks page
+* Verify that the page title is "My Decks"
+* On Create New Deck page
+* Verify that the page title is "Create Deck"
+* Tap on 'Remind me daily starting' switch
+* Create a new deck using the following details
+   |Deck title   |Exam date      |Frequency of notifications|Hour    |Minutes   |AM/PM |
+   |-------------|---------------|--------------------------|--------|----------|------|
+   |<deckTitle>  |<examDate>     |<frequency>               |<hour>  |<minutes> |<amPm>|
+* Verify the deck creation has completed successfully

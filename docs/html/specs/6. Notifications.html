@@ -1,0 +1,89 @@
+<link rel="stylesheet" type="text/css" href="..\style.css"><h1>Notifications Specification</h1>
+<p>Date Created    : 09/23/2017
+Version         : 1.0.0
+Owner           : Osanda Deshan
+Description     : This is an executable specification file which follows markdown syntax. Every heading in this file denotes a scenario. Every bulleted point denotes a step.</p>
+<p>tags: settings</p>
+<h2>Verify that &quot;2 weeks before exam&quot; should be already selected as the default notification frequency</h2>
+<p>tags: notifications, settings</p>
+<ul>
+<li>On Settings page</li>
+<li>Verify that the page title is &quot;Settings&quot;</li>
+<li>On Notifications page</li>
+<li>Verify that the page title is &quot;Notifications&quot;</li>
+<li>Reminder frequency and verify its active status
+<table>
+<thead>
+<tr>
+<th>Notification Frequency</th>
+<th>Is Radio Button Active</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 weeks before exam</td>
+<td>true</td>
+</tr>
+<tr>
+<td>1 week before exam</td>
+<td>false</td>
+</tr>
+<tr>
+<td>5 days before exam</td>
+<td>false</td>
+</tr>
+<tr>
+<td>1 day before exam</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2>Verify that a user can select any notification frequency</h2>
+<p>tags: notifications, settings</p>
+<ul>
+<li>Select reminder frequency and verify its active status
+<table>
+<thead>
+<tr>
+<th>Notification Frequency</th>
+<th>Is Radio Button Active</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 weeks before exam</td>
+<td>true</td>
+</tr>
+<tr>
+<td>1 week before exam</td>
+<td>true</td>
+</tr>
+<tr>
+<td>5 days before exam</td>
+<td>true</td>
+</tr>
+<tr>
+<td>1 day before exam</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2>Verify that a user can select any time</h2>
+<p>tags: notifications, settings</p>
+<ul>
+<li>Set timer using the following details
+|Hour|Minutes|AM/PM|
+|9   |35     |PM   |</li>
+<li>Verify the default reminder time should be &quot;09:35 PM&quot;</li>
+</ul>
+<h2>Verify that a user can navigate back to Settings page</h2>
+<p>tags: notifications, settings</p>
+<ul>
+<li>Navigate back from notifications page</li>
+<li>Verify that the page title is &quot;Settings&quot;</li>
+</ul>
+<ul id="navigation"><center><li class="nav"><a href=".\5. Settings.html"><</a></li><li class="nav"><a href="..\index.html">=</a></li><li class="nav"><a href=".\7. Feedback.html">></a></li></center>

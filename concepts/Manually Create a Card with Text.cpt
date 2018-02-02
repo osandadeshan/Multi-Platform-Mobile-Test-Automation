@@ -1,0 +1,20 @@
+Created by Osanda Deshan on 10/23/2017
+
+This is a concept file with following syntax for each concept.
+
+
+
+# Manually create a card in <expertDeck> My Deck using the question as <question> and the answer as <answer>
+
+* Navigate to <expertDeck> My Deck Card list page
+* Tap on Add Card button
+* Navigate to Create Card page
+* Verify that the page title is "Create Card"
+* Verify that the Front tab is selected as default
+* Verify that the Question text box is visible
+* Enter a question as follows <question>
+* Navigate to Back tab
+* Verify that the Back tab is selected
+* Verify that the Answer text box is visible
+* Enter an answer as follows <answer>
+* Save the card

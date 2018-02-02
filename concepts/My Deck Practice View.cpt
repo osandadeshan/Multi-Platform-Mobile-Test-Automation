@@ -1,0 +1,13 @@
+Created by Osanda Deshan on 10/18/2017
+
+This is a concept file with following syntax for each concept.
+
+
+
+# Navigate to <myDeck> My Deck Practice Page
+
+* On My Decks page
+* Tap on <myDeck> My Deck
+* Verify that the Practice Button is visible after selecting a My Deck
+* Verify that the View/Edit Cards Button is visible after selecting a My Deck
+* Navigate to Practice of My Deck

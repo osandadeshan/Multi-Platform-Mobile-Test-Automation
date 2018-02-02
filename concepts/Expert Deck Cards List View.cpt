@@ -1,0 +1,14 @@
+Created by Osanda Deshan on 10/18/2017
+
+This is a concept file with following syntax for each concept.
+
+
+
+# Navigate to <expertDeck> Expert Deck Card list page
+
+* On Expert Decks page
+* Tap on <expertDeck> Expert Deck
+* Verify that the Expert Deck title showing here is <expertDeck>
+* Verify that the Practice Button is visible after selecting a Expert Deck
+* Verify that the View/Edit Cards Button is visible after selecting a Expert Deck
+* Navigate to cards list view of the Expert Deck

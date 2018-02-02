@@ -1,0 +1,353 @@
+<link rel="stylesheet" type="text/css" href="..\style.css"><h1>Create New Deck Specification</h1>
+<p>Date Created    : 09/23/2017
+Version         : 1.0.0
+Owner           : Osanda Deshan
+Description     : This is an executable specification file which follows markdown syntax. Every heading in this file denotes a scenario. Every bulleted point denotes a step.</p>
+<p>tags: create_new_my_deck</p>
+<h2>Verify that the expected UI elements are visible on the create new deck page</h2>
+<ul>
+<li>On My Decks page</li>
+<li>Verify that the page title is &quot;My Decks&quot;</li>
+<li>On Create New Deck page</li>
+<li>Verify that the page title is &quot;Create Deck&quot;</li>
+<li>Verify that the Deck title label is &quot;Deck title *&quot;</li>
+<li>Verify that the Deck title textbox is visible</li>
+<li>Verify that the Exam date label is &quot;Exam Date&quot;</li>
+<li>Verify that the Exam date textbox is visible</li>
+<li>Verify that the 'Remind me daily starting' label is &quot;Remind me daily starting:&quot;</li>
+<li>Verify that the 'Remind me daily starting' switch is visible</li>
+</ul>
+<h2>Verify that the 'Remind me daily starting' switch is in off status as default</h2>
+<ul>
+<li>Verify that the 'Remind me daily starting' switch is in &quot;OFF&quot; status</li>
+<li>Verify that the enable status of the frequency dropdown is &quot;false&quot;</li>
+<li>Verify that the enable status of the time picker is &quot;false&quot;</li>
+</ul>
+<h2>Verify that the 'Remind me daily starting' switch can switch on</h2>
+<ul>
+<li>Tap on 'Remind me daily starting' switch</li>
+<li>Verify that the 'Remind me daily starting' switch is in &quot;ON&quot; status</li>
+<li>Verify that the enable status of the frequency dropdown is &quot;true&quot;</li>
+<li>Verify that the enable status of the time picker is &quot;true&quot;</li>
+</ul>
+<h2>Verify that the 'Remind me daily starting' switch can switch off</h2>
+<ul>
+<li>Tap on 'Remind me daily starting' switch</li>
+<li>Verify that the 'Remind me daily starting' switch is in &quot;OFF&quot; status</li>
+<li>Verify that the enable status of the frequency dropdown is &quot;false&quot;</li>
+<li>Verify that the enable status of the time picker is &quot;false&quot;</li>
+</ul>
+<h2>Verify that a user can create a new deck with all fields</h2>
+<ul>
+<li>Verify that the 'Remind me daily starting' switch is in &quot;OFF&quot; status</li>
+<li>Tap on 'Remind me daily starting' switch</li>
+<li>Verify that the 'Remind me daily starting' switch is in &quot;ON&quot; status</li>
+<li>Create a new deck using the following details
+<table>
+<thead>
+<tr>
+<th>Deck title</th>
+<th>Exam date</th>
+<th>Frequency of notifications</th>
+<th>Hour</th>
+<th>Minutes</th>
+<th>AM/PM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TestNew</td>
+<td>28 October 2017</td>
+<td>5 days before exam</td>
+<td>11</td>
+<td>35</td>
+<td>PM</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Verify the deck creation has completed successfully</li>
+<li>Verify that the newly added &quot;TestNew&quot; my deck is visible</li>
+</ul>
+<h2>Verify that a user can create a new deck using only deck title</h2>
+<ul>
+<li>On Create New Deck page</li>
+<li>Create a new deck using the following details
+<table>
+<thead>
+<tr>
+<th>Deck title</th>
+<th>Exam date</th>
+<th>Frequency of notifications</th>
+<th>Hour</th>
+<th>Minutes</th>
+<th>AM/PM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TestNew</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Verify the deck creation has completed successfully</li>
+<li>Verify that the newly added &quot;TestNew&quot; my deck is visible</li>
+</ul>
+<h2>Verify that a user can create a new deck using a &quot;-&quot; for the deck title</h2>
+<ul>
+<li>On Create New Deck page</li>
+<li>Create a new deck using the following details
+<table>
+<thead>
+<tr>
+<th>Deck title</th>
+<th>Exam date</th>
+<th>Frequency of notifications</th>
+<th>Hour</th>
+<th>Minutes</th>
+<th>AM/PM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TestDeck-New</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Verify the deck creation has completed successfully</li>
+<li>Verify that the newly added &quot;TestDeck-New&quot; my deck is visible</li>
+</ul>
+<h2>Verify that a user can create a new deck using a &quot;:&quot; for the deck title</h2>
+<ul>
+<li>On Create New Deck page</li>
+<li>Create a new deck using the following details
+<table>
+<thead>
+<tr>
+<th>Deck title</th>
+<th>Exam date</th>
+<th>Frequency of notifications</th>
+<th>Hour</th>
+<th>Minutes</th>
+<th>AM/PM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TestDeck:New</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Verify the deck creation has completed successfully</li>
+<li>Verify that the newly added &quot;TestDeck:New&quot; my deck is visible</li>
+</ul>
+<h2>Verify that a user cannot create a new deck using a &quot;@&quot; for the deck title</h2>
+<ul>
+<li>On Create New Deck page</li>
+<li>Create a new deck using the following details
+<table>
+<thead>
+<tr>
+<th>Deck title</th>
+<th>Exam date</th>
+<th>Frequency of notifications</th>
+<th>Hour</th>
+<th>Minutes</th>
+<th>AM/PM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TestDeck@New</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Verify the deck creation has failed</li>
+<li>Navigate back to My Decks page</li>
+<li>Verify that the &quot;TestDeck@New&quot; my deck is not visible</li>
+</ul>
+<h2>Verify that a user can create a new deck using 50 characters for the deck title</h2>
+<ul>
+<li>On Create New Deck page</li>
+<li>Create a new deck using the following details
+<table>
+<thead>
+<tr>
+<th>Deck title</th>
+<th>Exam date</th>
+<th>Frequency of notifications</th>
+<th>Hour</th>
+<th>Minutes</th>
+<th>AM/PM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The maximum num of chars for the deck title is 50.</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Verify the deck creation has completed successfully</li>
+<li>Verify that the newly added &lt;file:/resources/deck_titles/50 characters deck title.txt&gt; my deck is visible</li>
+</ul>
+<h2>Verify that a user cannot create a new deck using 51 characters for the deck title</h2>
+<ul>
+<li>On Create New Deck page</li>
+<li>Create a new deck using the following details
+<table>
+<thead>
+<tr>
+<th>Deck title</th>
+<th>Exam date</th>
+<th>Frequency of notifications</th>
+<th>Hour</th>
+<th>Minutes</th>
+<th>AM/PM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The maximum num of chars for the deck title is 50..</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Verify the deck creation has failed</li>
+<li>Verify that the &lt;file:/resources/deck_titles/51 characters deck title.txt&gt; my deck is not visible</li>
+</ul>
+<h2>Verify that a user can create a new deck using deck title and exam date</h2>
+<ul>
+<li>On Create New Deck page</li>
+<li>Create a new deck using the following details
+<table>
+<thead>
+<tr>
+<th>Deck title</th>
+<th>Exam date</th>
+<th>Frequency of notifications</th>
+<th>Hour</th>
+<th>Minutes</th>
+<th>AM/PM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QETest</td>
+<td>25 October 2017</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Verify the deck creation has completed successfully</li>
+<li>Verify that the newly added &quot;QETest&quot; my deck is visible</li>
+</ul>
+<h2>Verify that a user can create a new deck using deck title, exam date and frequency of notifications</h2>
+<ul>
+<li>On Create New Deck page</li>
+<li>Tap on 'Remind me daily starting' switch</li>
+<li>Verify that the 'Remind me daily starting' switch is in &quot;ON&quot; status</li>
+<li>Create a new deck using the following details
+<table>
+<thead>
+<tr>
+<th>Deck title</th>
+<th>Exam date</th>
+<th>Frequency of notifications</th>
+<th>Hour</th>
+<th>Minutes</th>
+<th>AM/PM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QETest2</td>
+<td>22 October 2017</td>
+<td>1 day before exam</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Verify the deck creation has completed successfully</li>
+<li>Verify that the newly added &quot;QETest2&quot; my deck is visible</li>
+</ul>
+<h2>Verify that a user cannot create a new deck without mandatory fields</h2>
+<ul>
+<li>On Create New Deck page</li>
+<li>Create a new deck using the following details
+<table>
+<thead>
+<tr>
+<th>Deck title</th>
+<th>Exam date</th>
+<th>Frequency of notifications</th>
+<th>Hour</th>
+<th>Minutes</th>
+<th>AM/PM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>Verify the deck creation has failed</li>
+<li>Navigate back to My Decks page</li>
+<li>Verify that the page title is &quot;My Decks&quot;</li>
+<li>Verify that the &quot;&quot; my deck is not visible</li>
+</ul>
+<h2>Verify that a user can navigate back to My Decks page</h2>
+<ul>
+<li>On Create New Deck page</li>
+<li>Navigate back to My Decks page</li>
+<li>Verify that the page title is &quot;My Decks&quot;</li>
+</ul>
+<ul id="navigation"><center><li class="nav"><a href=".\02. Navigation Bar.html"><</a></li><li class="nav"><a href="..\index.html">=</a></li><li class="nav"><a href=".\04. Expert Decks.html">></a></li></center>
